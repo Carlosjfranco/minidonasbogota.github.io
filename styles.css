@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Kids Monday";
+  src: url("KidsMonday.ttf");
+}
+
+body {
+  font-family: "Kids Monday";
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #7f1c7f;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #7f1c7f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #a639aa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Kids Monday";
+  letter-spacing: 2px;
+}
+
+.promotions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.promotions h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para dispositivos de escritorio */
+@media screen and (min-width: 768px) {
+  .promotion-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .promotion-item {
+    margin: 0 10px;
+  }
+
+  .promotion-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Estilos para dispositivos responsivos */
+@media screen and (max-width: 767px) {
+  .promotion-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promotion-item {
+    margin: 10px;
+  }
+
+  .promotion-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #a639aa;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  letter-spacing: 5px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin: 30px;
+}
+
+.text-container2 {
+  margin-top: 0;
+}
+
+.image-container {
+  margin-bottom: 0;
+}
+
+.text-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 58px;
+  color: #e9ad07;
+  margin-bottom: 10px;
+  font-family: "Kids Monday", cursive;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 18px;
+  color: #b4adb4;
+  font-family: "Kids Monday", cursive;
+  letter-spacing: 2px;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact h2 {
+  font-size: 44px;
+  color: #7f1c7f;
+}
+
+.contact form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.contact label {
+  font-size: 18px;
+  color: #333;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #a639aa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Kids Monday";
+  letter-spacing: 2px;
+}
+
+.contact button:hover {
+  background-color: #7f1c7f;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-gallery a {
+  display: block;
+  margin: 10px;
+  position: relative;
+}
+
+.image-gallery img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image-gallery a:hover img {
+  transform: scale(1.5);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.close:hover {
+  color: #ccc;
+}
